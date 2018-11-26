@@ -1,2 +1,2 @@
 # test
-just for test purpose only
+for test purpose only
