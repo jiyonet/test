@@ -1,6 +1,8 @@
-FROM centos:latest
+FROM scratch
+ADD centos-7-docker.tar.xz /
 MAINTAINER rongda.shen
 LABEL Discription="wordpress based on centos7" version="alpha"
+CMD ["/bin/bash"]
 RUN yum update -y\
  && yum clean all
 RUN yum install epel-release -y\
