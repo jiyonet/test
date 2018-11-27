@@ -5,5 +5,6 @@ COPY index.html /app
 COPY wordpress-4.9.4-zh_CN.zip /app
 RUN unzip /app/wordpress-4.9.4-zh_CN.zip -d /app && \
 rm -rf /app/wordpress-4.9.4-zh_CN.zip
+RUN chown -R application:application /app
 VOLUME /data
 EXPOSE 80
